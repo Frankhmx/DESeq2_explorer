@@ -22,18 +22,6 @@
   S4        treat
   ```
 
-**Run Locally**
-```r
-# Install dependencies
-install.packages(c("shiny","readr","dplyr","tibble","ggplot2","plotly","pheatmap","RColorBrewer"))
-if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
-BiocManager::install("DESeq2")
-
-# Launch
-shiny::runApp("app.R")
-```
-- Default upload limit is 50 MB (set via `options(shiny.maxRequestSize = 50 * 1024^2)` in app.R).
-
 **How to Use**
 1) Upload featureCounts table and design table.  
 2) Select sample column and group column; pick Treated (numerator) and Control (denominator).  
